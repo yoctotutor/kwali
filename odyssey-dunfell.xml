@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="2"/>
-
   <!-- remotes -->
   <remote fetch="https://github.com/yoctotutor" name="CAF"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="git://git.yoctoproject.org/meta-intel layers/meta-intel" name="intel"/>
-  <remote fetch="https://github.com/Seeed-Studio/meta-odyssey-x86" name="odyssey-x86"/>
-  <remote fetch="https://github.com/mendersoftware/meta-mender" name="mender"/>
+  <remote fetch="https://github.com/Seeed-Studio" name="odyssey-x86"/>
+  <remote fetch="https://github.com/mendersoftware" name="mender"/>
   <remote fetch="https://github.com/ni/meta-selinux.git" name="selinux"/>
-  <remote fetch="https://git.yoctoproject.org/meta-virtualization" name="virtualization"/>
 
   <!-- upstream oe layers -->
   <project name="poky" path="sources/poky" remote="yocto" revision="0839888394a6e42e96f9f0d201376eb38bc79b24"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="7889158dcd187546fc5e99fd81d0779cad3e8d17"/>
 
   <!-- SoC and SBC layers -->
-  <project name="meta-intel" path="sources/meta-intel" remote="intel" revision="4a0107ac96b78d123975471980bf4d8e5784c2b9"/>
+  <project name="meta-intel" path="sources/meta-intel" remote="yocto" revision="4a0107ac96b78d123975471980bf4d8e5784c2b9"/>
   <project name="meta-odyssey-x86" path="sources/meta-odyssey-x86" remote="odyssey-x86" revision="58cef9b4862521607f7bd1b26be39410d07db466"/>
 
   <!-- mender, selinux, docker layers -->
   <project name="meta-mender" path="sources/meta-mender" remote="mender" revision="75b51d94058412e47c3fd94eeede86c407711f44"/>
-  <project name="meta-selinux" path="sources/meta-selinux" remote="selinux" revision="a7b452dd0a2d3f21b9f6a543fcac539f73b83dea"/>
-  <project name="meta-virtualization" path="sources/meta-virtualization" remote="virtualization" revision="c5f61e547b90aa8058cf816f00902afed9c96f72"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="c5f61e547b90aa8058cf816f00902afed9c96f72"/>
 
 </manifest>
