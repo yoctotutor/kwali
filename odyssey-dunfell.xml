@@ -19,6 +19,7 @@
 
   <!-- mender, selinux, docker layers -->
   <project name="meta-mender" path="sources/meta-mender" remote="mender" revision="75b51d94058412e47c3fd94eeede86c407711f44"/>
+  <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="1fba53261bb8d7d3a5dcf238e388811cbb15219b"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="c5f61e547b90aa8058cf816f00902afed9c96f72"/>
 
 </manifest>
